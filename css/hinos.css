@@ -1,0 +1,138 @@
+/* Estilos para a página index.html */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #555;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos específicos */
+main h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+.highlighted {
+    background-color: yellow;
+}
+.sidebar {
+    width: 200px;
+    float: left;
+}
+.main-content {
+    margin-left: 220px;
+}  
+
+/* Para tornar a imagem responsiva */
+img {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  /* Para definir o tamanho da imagem para dispositivos móveis */
+  @media (max-width: 480px) {
+    img {
+      width: 100%;
+    }
+  }
+  nav {
+    position: relative;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-item-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .botao-verde {
+    background-color: rgb(18, 0, 82);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .botao-verde:first-child {
+    margin-left: 0;
+  }
+  
+  .botao-verde:hover {
+    background-color: rgb(68, 14, 245);
+  }
+  

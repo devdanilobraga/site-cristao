@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="css/quiz.css">
+    <script src="script/quiz.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Quiz</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="leitura.html">Leitura da Bíblia</a></li>
+        <li><a href="bloco_notas.html">Bloco de Notas</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="nav-item-right">
+          <a href="assets/biblia.pdf" class="botao-verde">Biblia PDF</a>
+          <a href="assets/hinos.pdf" class="botao-verde">Hinos da Harpa PDF</a>
+        </li>  
+      </ul>
+    </nav>
+    
+    <main>
+        <div id="quiz-container">
+          <h2>Perguntas Bíblicas</h2>
+          <button onclick="comecarQuiz()">Começar Quiz</button>
+          <div id="respostas-container"></div>
+          <div id="pergunta" class="pergunta" style="display: none;">
+            <h3></h3>
+            <p></p>
+            <ul id="opcoes-resposta"></ul>
+          </div>
+      
+          <div id="botoes-navegacao" style="display: none;">
+            <button id="pergunta-anterior" onclick="perguntaAnterior()">Pergunta Anterior</button>
+            <button id="proxima-pergunta" onclick="proximaPergunta()">Próxima Pergunta</button>
+            <button id="verificar-respostas" onclick="verificarRespostas()">Verificar Respostas</button>
+          </div>
+      
+        </div>
+      
+       
+      </main>
+      
+    
+    <footer>
+        <p>&copy; 2023 Site Cristão. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

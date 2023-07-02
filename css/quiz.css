@@ -1,0 +1,194 @@
+/* Estilos para a página index.html */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #555;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos específicos */
+main h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+.highlighted {
+    background-color: yellow;
+}
+.sidebar {
+    width: 200px;
+    float: left;
+}
+.main-content {
+    margin-left: 220px;
+}  
+
+main {
+    padding: 20px;
+    background-color: #f1f1f1; /* Cor de fundo */
+}
+
+main h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Cor do texto */
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666; /* Cor do texto */
+}
+/* Estilos para os botões */
+button {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o formato da pergunta */
+#pergunta {
+    background-color: #f9f9f9; /* Cor de fundo */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#pergunta h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333; /* Cor do texto */
+}
+
+#pergunta p {
+    font-size: 16px;
+    color: #666; /* Cor do texto */
+}
+
+/* Estilos para a frase de "Você acertou" */
+#respostas-container {
+  
+    color: rgb(106, 8, 243); /* Cor do texto */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#respostas-container h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#respostas-container p {
+    font-size: 16px;
+    color: #fff; /* Cor do texto */
+}
+nav {
+    position: relative;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-item-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .botao-verde {
+    background-color: rgb(18, 0, 82);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .botao-verde:first-child {
+    margin-left: 0;
+  }
+  
+  .botao-verde:hover {
+    background-color: rgb(68, 14, 245);
+  }
+  

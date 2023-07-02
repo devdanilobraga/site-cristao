@@ -1,0 +1,242 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #555;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos específicos */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.book-list button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.book-list button:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.chapter-list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.chapter-list button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.chapter-list button:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+.verse-list {
+    margin-bottom: 20px;
+}
+
+.verse-list p {
+    margin-bottom: 5px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.pagination button:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+footer {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsividade para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .book-list {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .chapter-list {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+
+.book-list button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.book-list button:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+#currentChapter {
+    font-size: 23px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  nav {
+    position: relative;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-item-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .botao-verde {
+    background-color: rgb(18, 0, 82);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .botao-verde:first-child {
+    margin-left: 0;
+  }
+  
+  .botao-verde:hover {
+    background-color: rgb(68, 14, 245);
+  }
+  

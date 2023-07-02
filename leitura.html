@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Leitura da Bíblia</title>
+    <link rel="stylesheet" type="text/css" href="css/leitura.css">
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    
+    <style>
+        .highlighted {
+            background-color: yellow;
+        }
+
+        @media only screen and (max-width: 600px) {
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Leitura da Bíblia</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="leitura.html">Leitura da Bíblia</a></li>
+            <li><a href="bloco_notas.html">Bloco de Notas</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li class="nav-item-right">
+                <a href="assets/biblia.pdf" class="botao-verde">Biblia PDF</a>
+                <a href="assets/hinos.pdf" class="botao-verde">Hinos da Harpa PDF</a>
+            </li>  
+          </ul>
+    </nav>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Livros da Bíblia</h2>
+            <ul id="bookList"></ul>
+        </div>
+        <div class="main-content">
+            <h2 id="bookTitle"></h2>
+            <div class="chapter-list" id="chapterList"></div>
+            <span id="currentChapter"></span>
+            <div class="verse-list" id="verseList"></div>
+            <div class="pagination" id="paginationContainer"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Site Cristão. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script/leitura.js"></script>
+</body>
+</html>
