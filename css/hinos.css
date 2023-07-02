@@ -135,4 +135,29 @@ img {
   .botao-verde:hover {
     background-color: rgb(68, 14, 245);
   }
-  
+
+
+/* Responsividade para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .book-list {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .chapter-list {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .book-list button {
+        width: auto;
+    }
+}
