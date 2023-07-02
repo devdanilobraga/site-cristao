@@ -5,6 +5,209 @@
     <title>Bloco de Notas</title>
     <link rel="stylesheet" type="text/css" href="/css/notas.css">
     <script src="script/notas.js"></script>
+    <style>
+        /* Estilos para a página index.html */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #555;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos específicos */
+main h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#notepad-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#notepad {
+    width: 400px;
+    height: 200px;
+    resize: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#notepad-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#notepad-actions button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#notepad-actions button.primary {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+}
+
+#notepad-actions button.primary:hover {
+    background-color: #45a049;
+}
+
+#notepad-actions button.secondary {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+}
+
+#notepad-actions button.secondary:hover {
+    background-color: #d32f2f;
+}
+
+#notepad-actions button.edit {
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+}
+
+#notepad-actions button.edit:hover {
+    background-color: #1976d2;
+}
+
+#notepad-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#notepad-list li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#notepad-list li:hover {
+    background-color: #e0e0e0;
+}
+
+.read-only #notepad {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+nav {
+    position: relative;
+  }
+  
+  ul.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-item-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .botao-verde {
+    background-color: rgb(18, 0, 82);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .botao-verde:first-child {
+    margin-left: 0;
+  }
+  
+  .botao-verde:hover {
+    background-color: rgb(68, 14, 245);
+  }
+  
+    </style>
 </head>
 <body>
     <header>
